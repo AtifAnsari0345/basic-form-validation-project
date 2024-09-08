@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <div class="card form-card">
+            <div class="card-body">
+                <h3 class="card-title text-center text-white">Registration Form</h3>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName" class="text-white">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        <div class="invalid-feedback">Name must be at least 5 characters long.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-white">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="text-white">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-white">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        <div class="invalid-feedback">Password cannot be 'password', your name, or less than 8 characters.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" class="text-white">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                        <div class="invalid-feedback">Passwords do not match.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Link to custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
